@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Infrastructure problems",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*bye-bye.*"
+  },
+  {
+    "name": "Brak elementu",
+    "matchedStatuses": ["failed"],
+    "traceRegex": ".*NoSuchElementException.*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Moja kategoria",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*Unable.*"
+  }
+]

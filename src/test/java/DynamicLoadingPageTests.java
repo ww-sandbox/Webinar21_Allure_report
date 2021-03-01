@@ -1,6 +1,5 @@
 import Pages.DynamicLoadingPage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -9,6 +8,9 @@ public class DynamicLoadingPageTests extends BaseTest {
     DynamicLoadingPage dynamicLoadingPage;
     static final String EXPECTED_CONFIRMATION_TEXT = "Hello World!";
 
+    @Owner("John Tester")
+    @Epic("EDU-11")
+    @Story("EDU-121")
     @BeforeClass
     public void setUp(){
         super.setUp();
@@ -16,6 +18,8 @@ public class DynamicLoadingPageTests extends BaseTest {
         dynamicLoadingPage = new DynamicLoadingPage(driver);
     }
 
+    @Severity(SeverityLevel.MINOR)
+    @TmsLink("EDU-999")
     @Test
     public void startButtonIsDisplayed(){
         dynamicLoadingPage.clickStartButton()
