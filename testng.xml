@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suita testowa" verbose="1" >
+    <test name="Add owners test" >
+        <classes>
+            <class name="DynamicLoadingPageTests"></class>
+        </classes>
+    </test>
+</suite>
